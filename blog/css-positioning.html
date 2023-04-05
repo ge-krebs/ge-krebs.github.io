@@ -4,27 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Dev Files - CSS Positioning</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <title>CSS Positioning | The Dev Files</title>
 </head>
-<body>
 
-  <h1>The differences between relative, absolute and fixed positioning</h1>
-  <h2>Introduction</h2>
-  <p>The use of CSS positioning allows you to position HTML elements on your webpage. 
-    Although confusing at first, once understanding these positioning types you can easily move elements around your webpage and create functional websites.
-  </p>
-  <h2>Absolute</h2>
-  <p>Using absolute positioning allows you to position an HTML element relative to its closest positioned element. The most common use case is for positioning elements inside another element . If there is no previously positioned element the absolute element will position itself against the viewpoint of your webpage. The example below includes two div containers, a parent and a child. The first screenshot displays the childs position when the parent container has a position defined as relative).</p>
-  <img src="../images/absolute-positioning-example1.jpg" alt="Example of absolute positioning with code">
-  <p>The second screen shows the child containers position relative to the body of the webpage since no previous elements position has been defined.</p>
-  <img src="../images/absolute-positioning-example2.jpg" alt="Example of absolute positioning with code">
-  <h2>relative</h2>
-  <p>Positioning an element as relative will move the element to its usual position on your webpage. This then allows you to move the element using top, left, right and bottom. This example shows a main container (green) with another container (red) underneath positioned as relative. The red container can be moved freely anywhere underneath the green container. </p>
-  <img src="../images/relative-position-example.jpg" alt="Example of relative positioning with code">
-  <h2>Fixed</h2>
-  <p>A fixed element will always stay in the same position on the webpage even if the page is scrolled. An example of using the fixed position might be for a footer of a website. The below code and webpage shows a footer fixed to the bottom of the webpage. The bottom and left margins have a margin of 0px and since the elements position is defined as fixed the footer is stuck to the bottom of our webpage.</p>
-  <img src="../images/fixed-positioning-example.jpg" alt="Example of fixed positioning with code">
-  <h2>Conclusion</h2>
-  <p>CSS positioning is an essential tool for designing web pages as it allows you to move elements around your webpage. An easy way to understand each of these positions is to create some square div containers and use the positioning tool to move the containers around on your webpage.</p>
+<body>
+  <!--header content-->
+  <header>
+    <h1>The Dev Files</h1>
+    <p>by gemma krebs</p>
+  </header>
+
+   <main>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="nav-button">home</a></li>
+        <li><a href="index.html" class="nav-button">tech blogs</a></li>
+        <li><a href="index.html" class="nav-button">core blogs</a></li>
+      </ul>
+    </nav>
+
+    <body>
+      <div class="blog-header-container">
+      <h1>The differences between relative, absolute and fixed positioning</h1>
+    </div>
+    <!--NOTE TO OPTIMISE THE IMAGES ON THIS ARTICLE-->
+    <div class="blog-content-container">
+      <h4>5/4/2023</h4>
+      <p>The use of CSS positioning allows you to position HTML elements on your webpage. 
+        Although confusing at first, once understanding these positioning types you can easily move elements around your webpage and create functional websites.
+      <h4>Absolute</h4>
+      <p>Using absolute positioning allows you to position an HTML element relative to its closest positioned element. The most common use case is for positioning elements inside another element . If there is no previously positioned element the absolute element will position itself against the viewpoint of your webpage. The example below includes two div containers, a parent and a child. The first screenshot displays the childs position when the parent container has a position defined as relative).</p>
+      <img src="../images/absolute-positioning-example1.jpg" class="blog-image" alt="Example of absolute positioning with code">
+      <p>The second screen shows the child containers position relative to the body of the webpage since no previous elements position has been defined.</p>
+      <img src="../images/absolute-positioning-example2.jpg" class="blog-image" alt="Example of absolute positioning with code">
+      <h4>Relative</h4>
+      <p>Positioning an element as relative will move the element to its usual position on your webpage. This then allows you to move the element using top, left, right and bottom. This example shows a main container (green) with another container (red) underneath positioned as relative. The red container can be moved freely anywhere underneath the green container. </p>
+      <img src="../images/relative-position-example.jpg" class="blog-image" alt="Example of relative positioning with code">
+      <h4>Fixed</h4>
+      <p>A fixed element will always stay in the same position on the webpage even if the page is scrolled. An example of using the fixed position might be for a footer of a website. The below code and webpage shows a footer fixed to the bottom of the webpage. The bottom and left margins have a margin of 0px and since the elements position is defined as fixed the footer is stuck to the bottom of our webpage.</p>
+      <img src="../images/fixed-positioning-example.jpg" class="blog-image" alt="Example of fixed positioning with code">
+      <p>CSS positioning is an essential tool for designing web pages as it allows you to move elements around your webpage. An easy way to understand each of these positions is to create some square div containers and use the positioning tool to move the containers around on your webpage.</p>
+    </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>this be my footer 2023</p>
+    </div>
+  </footer>
+
 </body>
 </html>
