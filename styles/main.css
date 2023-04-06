@@ -63,37 +63,38 @@ h2 {
 
 .intro-container {
   max-width: 1028px;
-  margin: auto;
+  margin: 0 auto;
   border-top: 2px solid black;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .left-intro-container {
-  width: 20%;
-  top: 0px;
-  left: 0px;
-  background-color: lightgray;
+  width: 28%;
+  /* top: 0px;
+  left: 0px; */
 }
 
-.left-intro-container-image {
-  max-width: 200px;
+.left-intro-container img {
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 220px;
   border: solid black 2px;
   border-radius: 8px;
 }
 
 .right-intro-container {
   background-color: lightgray;
-  width: 80%;
+  width: 70%;
   text-align: center;
   font-size: 1rem;
   border: solid black 2px;
   border-radius: 8px;
   font-family: 'Encode Sans', sans-serif;
-  margin-left: 20px;
-  font-size: 1rem;
+  /* margin-left: 20px; */
 }
 
 .right-intro-container p {
@@ -102,10 +103,17 @@ h2 {
 }
 
 .right-intro-container h1 {
-  font-family: 'Playfair Display SC', serif;;
+  font-family: 'Playfair Display SC', serif;
 }
 
 /* Recent BLOGS SPACE */
+
+#recent-blog-header {
+  font-family:'Playfair Display SC', serif;
+  max-width: 1028px;
+  margin: auto;
+  text-align: center;
+}
 
 .recent-blogs {
   background-color: lightgray;
@@ -181,4 +189,19 @@ footer {
   margin: auto;
   border: solid black 2px;
   border-radius: 2px;
+}
+
+@media (max-width: 767px) { /* for mobile devices */
+  .intro-container {
+    width: 100%; /* set the width to 100% for mobile devices */
+  }
+  .left-intro-container, .right-intro-container {
+    width: 100%;
+  }
+  .left-intro-container img {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
