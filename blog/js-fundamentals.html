@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <title>JS Fundamentals | The Dev Files</title>
+</head>
+  <body>
+   <!--header content-->
+  <header>
+    <h1>THE DEV FILES</h1>
+    <p>by gemma krebs</p>
+  </header>
+
+   <main>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="nav-button">home</a></li>
+        <li><a href="../techblogs.html" class="nav-button">tech blogs</a></li>
+        <li><a href="../coreblogs.html" class="nav-button">core blogs</a></li>
+      </ul>
+    </nav>
+
+    <div class="blog-header-container">
+    <h1>JS Fundamentals</h1>
+    </div>
+
+    <div class="blog-content-container">
+    <h4>13 April 2023</h4>
+    <h4>My Analogy of Javascript and it's relationship to HTML & CSS</h4>
+    <p>When I think of describing JavaScript I think of movement, sound, interaction. An example of JavaScripts relationship to HTML and CSS could be a children's toy. The idea for the toy (HTML) is made up of different compartments and objects. The design and coloring (CSS) brings it to life and makes the toy presentable. And finally the effects (JavaScript) make the toy interactive, think pressing buttons, talking toys etc. </p>
+    <div class="flex-photo-container">
+      <div class="recent-content">
+      <img src="../images/buzz-lightyear-html.jpg" class="recent-blog-image" alt="Buzz Lightyear in HTML">
+      <h3>Buzz Lightyear in HTML</h3>
+    </div>
+    <div class="recent-content">
+      <img src="../images/buzz-lightyear-css.webp" class="recent-blog-image" alt="Buzz Lightyear in CSS">
+      <h3>Buzz Lightyear in CSS</h3>
+    </div>
+    <div class="recent-content">
+      <img src="../images/buzz-lightyear-js.gif" class="recent-blog-image" alt="Buzz Lightyear in JS">
+      <h3>Buzz Lightyear in JS</h3>
+    </div>
+    </div>
+    <h4>What is control flow and loops?</h4>
+    <p>Control flow in programming is the order in which things are executed. Comparing this to everyday life you might compare this to a morning routine. You wake up, eat breakfast, shower, brush teeth etc. Each of these steps is taken in an order but you don’t repeat any of the steps because who has two showers in the morning? <br><br> Loops in programming is a piece of code or method that is repeated a number of times. The amount of loops is decided by the programmer. We can compare this to eating a meal. You grab the food with your utensil, put it in your mouth, chew, swallow and repeat until the loop until the food is gone. The amount of times you repeat this loop is determined by the amount of food on your plate. 
+      </p>
+      <h4>What is the DOM? How do I use it?</h4>
+      <p>The DOM (Document Object Model) is created by the browser when a web page is loaded. It represents the structure of HTML like a tree structure and each branch or leaf in the tree represents an HTML element. The DOM is used to interact with these elements and can be coded via JavaScript. Using the DOM you can:
+      </p>
+      <ul>
+        <li>Change and remove HTML elements within the webpage</li>
+        <li>Add or change CSS styling in elements</li>
+        <li>Add event listeners to elements (think button clicks or keystrokes)</li>
+        <li>Create new HTML elements to add to your webpage</li>
+        <li>Form submission in the front end </li>
+      </ul>
+      <p>An simple example of when you might interact with the DOM is when you are wanting to change the CSS styling of your h1 headings. To do this you would use query selector to locate all h1 elements then use a forEach loop to update each header by your chosen styling input. </p>
+      <h4>The difference between accessing Arrays and Objects
+      </h4>
+      <p>Although similar Arrays and Objects are accessed very differently. When you store information in Arrays you are generally storing one type of data, for example cars:
+      </p>
+      <p>let cars = ['toyota', 'mazda', 'ford', 'honda']</p>
+      <p>These cars above are stored against a number in the array starting at 0,1,2 and so on. To access the data in this array you would use “cars[0]” which accesses the ‘toyota’ car since that is sitting in position 0 in the array. </p>
+      <p>Objects are more useful when you want to store multiple data types for one particular objects. I’ll use the car example but expand on that:</p>
+      <p>let cars = {
+        toyota: {
+          color: "blue",
+          topSpeed: "100km",
+          doors: "4"
+        },
+        mazda: {
+          color: "red",
+          topSpeed: "150km",
+          doors: "2"
+        }
+      }</p>
+      <p>The data points of color, top speed, doors are inside of the object car brand (toyota or mazda) and those objects are stored against a larger object "cars". To access the data points you use cars.toyota.color. Objects make it much easier to store various points of data.</p>
+      <h4>What are functions and why are they useful?</h4>
+      <p>JavaScript functions are a block of code that contains an action or method inside of them. For example you may have a function that calculates the average sum of some numbers. You may want that average function to calculate the average age of sports players and in a different section calculate their average scores. Instead of writing code/functions for both player age and scores you can call the one method without needing to calculate averages twice. <br><br>Once functions are written they can be used as many times as needed and you can call the function at various points in your code. They help to reduce code and keep applications maintainable. </p>
+  </div>
+    
+    <!-- this is a comment. -->
+  <footer>
+    <div class="footer-content">
+      <p>this be my footer 2023</p>
+    </div>
+  </footer>
+  </body>
+</html>
