@@ -203,6 +203,21 @@ footer {
   flex-wrap: wrap;
 }
 
+table {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px 20px 5px 20px;
+  border: solid black 0.5px;
+  font-size: .8rem;
+}
+
+/*Learning plan table*/
+#learning-plan-table {
+  margin: 0 auto;
+}
+
 
 @media (max-width: 767px) { /* for mobile devices */
   .intro-container {
@@ -216,5 +231,9 @@ footer {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
+  }
+  #learning-plan-table {
+  margin: 0 auto;
+  width: 100%;
   }
 }
